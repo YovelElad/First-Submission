@@ -1,0 +1,115 @@
+
+#hamburger section {
+    position: relative;
+    width: 175px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+
+#hamburger li {
+    display: block;
+}
+
+
+
+.search , .home , .work , .bad-park , .settings, .disconect {
+   position: absolute;
+   left: 36px;
+}
+
+
+.search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+    position: absolute;
+    left: 50px;
+}
+
+
+#hamburger .search  {
+    top: 103px;
+}
+
+
+#hamburger .home {
+    top: 133px;
+}
+
+
+#hamburger .work {
+    top: 163px;
+}
+
+
+#hamburger .bad-park  {
+    top: 223px;
+}
+
+#hamburger .bad-park a {
+    width: 80px;
+}
+
+#hamburger .settings {
+    top: 253px;
+}
+
+
+#hamburger .disconect {
+    top: 283px;
+}
+
+
+#ham {
+    background-image: url("/images/ham-icon.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 36px;
+    top: 16px;
+}
+
+
+
+
+@media (max-width:800px) {
+    #hamburger section {
+        width: 244px;
+        height: 700px;
+    }
+
+    .search , .home , .work , .bad-park , .settings, .disconect {
+        left: 39px;
+     }
+
+     .search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+        left: 55px;
+    }
+
+     #hamburger .search  {
+        top: 99px;
+    }
+    
+    #hamburger .home {
+        top: 146px;
+    }
+    #hamburger .work {
+        top: 193px;
+    }
+    
+    #hamburger .bad-park  {
+        top: 289px;
+    }
+    
+    #hamburger .settings {
+        top: 336px;
+    }
+    
+    #hamburger .disconect {
+        top: 385px;
+    }
+
+    #ham {
+        left: 36px;
+        top: 25px;
+    }
+    
+
+}

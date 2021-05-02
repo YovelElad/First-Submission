@@ -1,0 +1,573 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 700px;
+    height: 400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    padding-top: 100px;
+    
+}
+
+#main-object main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+.clientPic
+{
+    position: absolute;
+    right: 110px;
+    top: 9px;
+    background-image: url("../images/shlomi.png");
+    width: 39px;
+    height: 39px;
+}
+
+#logo {
+    background-image: url("../images/Logo.png");
+    display: block;
+    position: absolute;
+    right: 23px;
+    top: 8px;
+    width: 32px;
+    height: 45px;
+}
+
+#main-object .address {
+    position: absolute;
+    top: 64px;
+    right: 279px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#main-object .ellipse {
+    width: 149px;
+    height: 126px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/ellipse.png");
+    top: 109px;
+    left: 276px;
+    text-align: center;
+    padding-top: 23px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.ellipse > p {
+    font-size: 19px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.car , .p {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 267px;
+}
+
+#main-object .car {
+    background-image: url("../images/car.png");
+    left: 73px;
+}
+
+#main-object .p {
+    background-image: url("../images/p.png");
+    right: 78px;
+}
+
+
+#main-object .car-info , .parking-info {
+    position: absolute;
+    width: 147px;
+    height: 70px;
+    border: 1px solid #000000;
+    direction: rtl;
+    bottom: 20px;
+}
+
+#main-object .car-info p, .parking-info p {
+    margin-right: 4px;
+}
+
+#main-object .car-info h6, .parking-info h6 {
+    margin-right: 4px;
+}
+
+#main-object .car-info {
+    left: 20px;
+}
+
+#main-object h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#main-object .parking-info {
+    right: 27px;
+}
+
+#main-object .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/red-ellipse.png");
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: 311px;
+}
+.report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+#report main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+#report h1 {
+    direction: rtl;
+    position: absolute;
+    font-size: 21px;
+    top: 73px;
+    right: 15px;
+}
+
+
+#report .false-alarm {
+    top: 131px;
+}
+
+
+#report .true-alarm {
+    top: 163px;
+}
+
+
+#report .true-alarm , #report .false-alarm {
+    position: absolute;
+    right: 74px;
+}
+
+#report .true-alarm > input, #report .false-alarm > input {
+    left: 100px;
+    top: 2px;
+    position: absolute;
+}
+
+#report .bad-sensor {
+    position: absolute;
+    right: 73px;
+    top: 194px;
+}
+
+#report .bad-sensor > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+#report .no-access {
+    position: absolute;
+    right: 70px;
+    top: 225px;
+}
+
+#report .no-access > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+
+#report h6 {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    left: 300px;
+    top: 131px;
+    direction: rtl;
+}
+
+#report textarea {
+    resize: none;
+    direction: rtl;
+    position: absolute;
+    top: 170px;
+    left: 160px;
+}
+
+#report .no-use {
+    position: absolute;
+    left: 200px;
+    top: 270px;
+}
+
+#report .no-use > input  {
+    position: absolute;
+    left: 156px;
+    top: 4px;
+}
+
+#report .send {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    background-color: #d6d6d6;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+#system-message main {
+    width: 700px;
+    height: 400px;
+}
+
+#system-message .fade-map{
+    width: 700px;
+    height: 400px;
+    background-image: url("../images/city-map.png");
+    opacity: 0.31;
+    position: absolute;
+}
+
+#system-message .message {
+    position: absolute;
+    width: 335px;
+    height: 188px;
+    background-color: #c0c0c0;
+    border-radius: 7px;
+    display: block;
+    top: 107px;
+    left: 172px;
+}
+
+#system-message .message h1 {
+    position: absolute;
+    font-size: 30px;
+    left: 60px;
+    top: 18px;
+    direction: rtl;
+}
+
+#system-message .message p {
+    width: 228px;
+    height: 70px;
+    position: absolute;
+    font-size: 16px;
+    left: 59px;
+    top: 60px;
+    direction: rtl;
+}
+
+#system-message .agree ,#system-message .disagree {
+    position: absolute;
+    width: 116px;
+    height: 31px;
+    display: block;
+    text-align: center;
+    border-radius: 13px;
+    color: #FFFFFF;
+    top: 130px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#system-message .agree {
+
+    background-color: #46a546;
+    left: 47px;
+}
+
+#system-message .disagree {
+    background-color: #bd362f;
+    left: 187px;
+}
+
+#hamburger section {
+    position: relative;
+    width: 170px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+
+#hamburger li {
+    display: block;
+}
+
+
+
+.search , .home , .work , .bad-park , .settings, .disconect {
+   position: absolute;
+   left: 36px;
+}
+
+
+.search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+    position: absolute;
+    left: 50px;
+}
+
+
+#hamburger .search  {
+    top: 103px;
+}
+
+
+#hamburger .home {
+    top: 133px;
+}
+
+
+#hamburger .work {
+    top: 163px;
+}
+
+
+#hamburger .bad-park  {
+    width: 220px;
+    top: 223px;
+}
+
+#hamburger .settings {
+    top: 253px;
+}
+
+
+#hamburger .disconect {
+    top: 283px;
+}
+
+
+#ham {
+    background-image: url("/images/ham-icon.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 36px;
+    top: 16px;
+}
+
+
+
+
+@media (max-width:700px) {
+    #wrapper {
+        width: 480px;
+        height: 700px;
+    }
+
+    #report main {
+        width: 480px;
+        height: 700px;
+    }
+
+    #main-object main {
+        width: 480px;
+        height: 700px;
+    }
+
+    #system-message main {
+        width: 480px;
+        height: 700px;
+    }
+
+    #logo {
+        right: 14px;
+        top: 15px;
+    }
+
+    .clientPic {
+        top: 16px;
+        right: 73px;
+    }
+
+    #main-object .address {
+        right: 125px;
+        top: 97px;
+        width: 230px;
+        height: 23px;
+        text-align: center;
+    }
+
+    #main-object .ellipse { 
+        background-image: url("../images/mobile-ellipse.png");
+        height: 153px;
+        width: 176px;
+        top: 170px;
+        left: 152px;
+    }
+
+    .ellipse > p {
+        padding-top: 30px;
+     }
+
+   
+     #main-object .car { 
+        width: 50px;
+        height: 50px;
+         left: 80px;
+         top: 396px;
+         background-image: url("../images/mobile-car.png");
+     }
+
+     #main-object .p {
+         right: 79px;
+         width: 32px;
+         height: 40px;
+         top: 405px;
+         background-image: url("../images/p.png");
+     }
+
+     #main-object .car-info , .parking-info {
+        width: 160px;
+        height: 81px;
+        bottom: 171px;
+    }
+
+    #main-object .report {
+        width: 99px;
+        height: 99px;
+        background-image: url("../images/mobile-red-ellipse.png");
+        left: 190px;
+    }
+
+    .report p {
+        left: 23px;
+        top: 36px;
+        width: 53px;
+        height: 21px;
+        text-align: center;
+    }
+
+    #main-object .car-info p, .parking-info p {
+        margin-top: 3px;
+    }
+    
+    #main-object .car-info h6, .parking-info h6 {
+        margin-top: 3px;
+    }
+
+    #report h6 {
+        right: 15px;
+        top: 270px;
+    }
+
+    #report textarea {
+        top: 300px;
+        left: 188px;
+        width: 277px;
+        height: 118px;
+    }
+
+    #report .no-use {
+        left: 289px;
+        top: 450px;
+    }
+
+    #report .send {
+        left: 14px;
+        bottom: 57px;
+    }
+
+    #system-message .fade-map{
+        width: 480px;
+        height: 700px;
+        background-image: url("../images/mobile-city-map.jpeg");
+    }
+
+    #system-message .message {
+        top: 306px;
+        left: 72px;
+    }
+
+    #hamburger section {
+        width: 244px;
+        height: 700px;
+    }
+
+    .search , .home , .work , .bad-park , .settings, .disconect {
+        left: 39px;
+     }
+
+     .search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+        left: 55px;
+    }
+
+     #hamburger .search  {
+        top: 99px;
+    }
+    
+    #hamburger .home {
+        top: 146px;
+    }
+    #hamburger .work {
+        top: 193px;
+    }
+    
+    #hamburger .bad-park  {
+        top: 289px;
+    }
+    
+    #hamburger .settings {
+        top: 336px;
+    }
+    
+    #hamburger .disconect {
+        top: 385px;
+    }
+
+    #ham {
+        left: 36px;
+        top: 25px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

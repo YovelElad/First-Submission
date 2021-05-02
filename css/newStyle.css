@@ -1,0 +1,1037 @@
+/*---------------General---------------*/
+* {
+    /* font-family: arial; */
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+p, label, ul, img {
+    direction: rtl;
+}
+
+header, main, footer, nav, section, div {
+    display: block;
+}
+
+#wrapper {
+    width: 700px;
+    height: 403px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+body {
+    padding-top: 100px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    position: relative;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);    
+
+}
+
+.clientPic{
+    position: absolute;
+    right: 110px;
+    top: 9px;
+    background-image: url("../images/shlomi.png");
+    width: 39px;
+    height: 39px;
+}
+
+#logo {
+    background-image: url("../images/Logo.png");
+    display: block;
+    position: absolute;
+    right: 23px;
+    top: 8px;
+    width: 32px;
+    height: 45px;
+}
+
+header > nav {
+    position: absolute;
+    bottom: 3px;
+    display: none;
+    bottom: 7px;
+
+}
+
+header > nav > ul {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+header > nav > ul  li {
+    width: 250px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+header > nav > ul li.selected {
+    color: black;
+}
+
+header > nav > img {
+    position: absolute;
+    right: 250px;
+    top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 58px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    /* padding-bottom: 100px; */
+}
+
+footer > #search {
+    position: absolute;
+    top: 5px;
+    left: 48px;
+    font-size: 18px;
+    top: 22px;
+    font-weight: bold;
+}
+
+footer > #search > img {
+    position: absolute;
+    right: 50px;
+}
+
+footer > nav {
+    position: relative;
+} 
+
+footer > nav > ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer > nav > ul  li {
+    width: 130px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+footer > nav > ul li.selected {
+    color: black;
+}
+
+footer > img {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+}
+
+
+
+
+/*---------------Main List---------------*/
+ h1 {
+    direction: rtl;
+    font-size: 15px;
+    position: absolute;
+    right: 193px;
+    top: 10px;
+}
+
+#mainList .filter {
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+#mainList #filtering {
+    position: absolute;
+    right: 150px;
+    top: 2px;
+}
+
+#mainList #sort {
+    position: absolute;
+    top: 2px;
+    left: 150px;
+} 
+
+#mainList .filter > a > .filterExpand {
+    position: absolute;
+    top: 1px;
+    right: 30px;
+}
+
+#mainList .filter > a > .sortExpand {
+    position: absolute;
+    top: 1px;
+    right: 80px;
+}
+
+#mainList .filter .refresh {
+    position: absolute;
+    left: 10px;
+}
+
+#mainList main {
+    position: relative;
+}
+
+#mainList main > ul {
+    list-style-type: none;
+    z-index: -1;
+}
+
+#mainList main > ul > li {
+    width: 100%;
+    height: 81px;
+    background-color: #f7f6f6;
+    position: relative;
+}
+
+#mainList main > ul li >h2 {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 36px;
+}
+
+#mainList main > ul > a > li{
+    width: 100%;
+    height: 81px;
+    background-color: #f7f6f6;
+    position: relative;
+}
+
+#mainList main > ul li > p {
+    position: absolute;
+    top: 38px;
+    right: 36px;
+    font-size: 11px;
+}
+
+#mainList main > ul > a  img {
+    position: absolute;
+    bottom: 0; 
+    }
+
+#mainList main > ul > a.hideInstance {
+    display: none;
+}
+
+#mainList > #wrapper > main > section.filterNav {
+    position: absolute;
+    width: 216px;
+    height: 145px;
+    background-color: white;
+    top: 0;
+    right: 120px;
+    padding-right: 25px;
+    padding-top:5px ;
+}
+
+#mainList > #wrapper > main > section.sortNav{
+    position: absolute;
+    width: 216px;
+    height: 80px;
+    background-color: white;
+    top: 0;
+    left: 50px;
+    padding-right: 25px;
+    padding-top:5px ;
+    display: none;
+}
+
+#mainList #filterNav {
+    display: none;
+}  
+
+#mainList > #wrapper > main > section.filterNav > ul > li,#mainList > #wrapper > main > section.sortNav > ul > li {
+    position: relative;
+    height: 24px;
+}
+
+#mainList > #wrapper > main > section.filterNav > ul > li > img,#mainList > #wrapper > main > section.sortNav > ul > li > img {
+    position: absolute;
+    bottom: 3px;
+    left: 30px;
+}
+
+#mainList > #wrapper > main > section.filterNav > ul > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    right: 5px;
+}
+
+#mainList > #wrapper > main > section.sortNav > ul > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    bottom: 62px;
+    right: 5px;
+}
+
+#mainList #slider {
+    position: absolute;
+    width: 150px;
+    bottom: 30px;
+
+}
+
+
+
+
+
+/*---------------Main Object---------------*/
+#main-object main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+#main-object .address {
+    position: absolute;
+    top: 64px;
+    right: 279px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#main-object .ellipse {
+    width: 149px;
+    height: 126px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/ellipse.png");
+    top: 109px;
+    left: 276px;
+    text-align: center;
+    padding-top: 23px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+#main-object .ellipse > p {
+    font-size: 19px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+#main-object .car ,#main-object .p {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 267px;
+}
+
+#main-object .car {
+    background-image: url("../images/car.png");
+    left: 73px;
+}
+
+#main-object .p {
+    background-image: url("../images/p.png");
+    right: 78px;
+}
+
+#main-object .car-info ,#main-object .parking-info {
+    position: absolute;
+    width: 147px;
+    height: 70px;
+    border: 1px solid #000000;
+    direction: rtl;
+    bottom: 20px;
+}
+
+#main-object .car-info p,#main-object .parking-info p {
+    margin-right: 4px;
+}
+
+#main-object .car-info h6,#main-object .parking-info h6 {
+    margin-right: 4px;
+}
+
+#main-object .car-info {
+    left: 20px;
+}
+
+#main-object h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#main-object .parking-info {
+    right: 27px;
+}
+
+#main-object .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/red-ellipse.png");
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: 311px;
+}
+#main-object .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+
+
+
+/*---------------Report Page---------------*/
+#report main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+#report h1 {
+    direction: rtl;
+    position: absolute;
+    font-size: 21px;
+    top: 73px;
+    right: 15px;
+}
+
+#report .false-alarm {
+    top: 131px;
+}
+
+
+#report .true-alarm {
+    top: 163px;
+}
+
+#report .true-alarm , #report .false-alarm {
+    position: absolute;
+    right: 74px;
+}
+
+#report .true-alarm > input, #report .false-alarm > input {
+    left: 100px;
+    top: 2px;
+    position: absolute;
+}
+
+#report .bad-sensor {
+    position: absolute;
+    right: 73px;
+    top: 194px;
+}
+
+#report .bad-sensor > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+#report .no-access {
+    position: absolute;
+    right: 70px;
+    top: 225px;
+}
+
+#report .no-access > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+#report h6 {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    left: 300px;
+    top: 131px;
+    direction: rtl;
+}
+
+#report textarea {
+    resize: none;
+    direction: rtl;
+    position: absolute;
+    top: 170px;
+    left: 160px;
+}
+
+#report .no-use {
+    position: absolute;
+    left: 200px;
+    top: 270px;
+}
+
+#report .no-use > input  {
+    position: absolute;
+    left: 156px;
+    top: 4px;
+}
+
+#report .send {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    background-color: #d6d6d6;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+
+
+
+/*---------------Hamburger---------------*/
+#hamburger section {
+    position: relative;
+    width: 175px;
+    height: 403px;
+    background-color: #FFFFFF;
+}
+
+#hamburger li {
+    display: block;
+}
+
+.search , .home , .work , .bad-park , .settings, .disconect {
+   position: absolute;
+   left: 36px;
+}
+
+.search a , .home a , .work a  ,.settings a , .disconect a {
+    position: absolute;
+    left: 50px;
+}
+
+#hamburger .search  {
+    top: 103px;
+}
+
+#hamburger .home {
+    top: 133px;
+}
+
+#hamburger .work {
+    top: 163px;
+}
+
+#hamburger .bad-park  {
+    top: 223px;
+}
+
+#hamburger .bad-park a {
+    position: absolute;
+
+    width: 90px;
+    left: 42px;
+}
+
+#hamburger .settings {
+    top: 253px;
+}
+
+#hamburger .disconect {
+    top: 283px;
+}
+
+#ham {
+    background-image: url("/images/ham-icon.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 36px;
+    top: 16px;
+}
+
+
+
+
+
+/*---------------After Choose(map)---------------*/
+
+#afterChoose footer > #onMyWayTo {
+    position: absolute;
+    right: 107px;
+    top: 9px;
+}
+
+#afterChoose footer > #distance {
+    position: absolute;
+    right: 271px;
+    top: 9px;
+} 
+
+#afterChoose footer > article > p {
+    font-size: 14px;
+}
+
+#afterChoose footer > article > h2 {
+    font-size: 19px;
+
+}
+
+#afterChoose footer > #cancelParking {
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 34px;
+    left: 20px;
+    top: 13px;
+    background-color: #bd362f;
+    border-radius: 13px;
+    text-align: center;
+}
+
+#afterChoose footer > #cancelParking > p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+#afterChoose footer .fa-waze {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 12px;
+    right: 20px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 288px;
+    width: 700px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 288px;
+    width: 700px;
+}
+
+.mapouter2 {
+    position: relative;
+    text-align: right;
+    height: 550px;
+    width: 480px;
+}
+
+.gmap_canvas2 {
+    overflow: hidden;
+    background: none;
+    height: 550px;
+    width: 480px;
+}
+
+.fa-map-marker-alt {
+    z-index: 1;
+    position: absolute;
+    color: #0c59cf;
+    top: 250px;
+    left: 300px;
+}
+
+.fa-location-arrow {
+    color: #ee5f5b;
+    position: absolute;
+    top: 290px;
+    left: 270px;
+    z-index: 1;
+
+}
+
+#tallMap {
+    display: none;
+    position: absolute;
+}
+
+#afterChoose #systemMessege {
+    position: absolute;
+    width: 335px;
+    height: 207px;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    left: 185px;
+    top: 105px;
+    z-index: 10;
+    border-radius: 7px;
+    display: none;
+}
+
+#afterChoose #systemMessege > h2 {
+    position: absolute;
+    font-size: 17px;
+    display: block;
+    width: 335px;
+    text-align: center;
+    top: 30px;
+}
+
+#afterChoose #systemMessege form{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+#afterChoose #systemMessege form > input {
+    position: absolute;
+    display: block;
+    width: 200px;
+    right: 0;
+}
+
+#afterChoose #systemMessege form > label {
+    position: absolute;
+    display: block;
+    width: 150px;
+    right: 110px;
+}
+
+#afterChoose #systemMessege form > .lable2 {
+    top:25px;
+}
+
+#afterChoose #systemMessege form > .lable3 {
+    top:50px;
+}
+
+#afterChoose #systemMessege > a {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+#afterChoose #systemMessege > #sendButton {
+    background-color: #46a546;
+    top: 145px;
+    left: 59px;
+}
+
+#afterChoose #systemMessege > #dontSendButton {
+    background-color: #bd362f;
+    top: 145px;
+    right: 59px;
+    z-index: 11;
+}
+
+#afterChoose #systemMessege > h3 {
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+#afterChoose #systemMessege > #send {
+    top: 150px;
+    left: 99px;
+    z-index: 12;
+}
+
+#afterChoose #systemMessege > #dontSend{
+    top: 150px;
+    right:90px;
+    z-index: 12;
+} 
+
+#afterChoose #systemMessege > p {
+    position: absolute;
+    display: block;
+    width: 335px;
+    text-align: center;
+    font-size: 8px;
+    bottom: 15px;
+}
+
+#afterChoose .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-color: #bd362f;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    bottom: 80px;
+    right: 60px;;
+}
+#afterChoose .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    /*---------------General---------------*/
+    #wrapper {
+        width: 480px;
+        height: 700px;
+    }
+    header {
+        height: 95px;
+    }
+
+    #logo {
+        top: 15px;
+        right: 14px ;
+    }
+    .clientPic {
+        top: 16px;
+        left: 375px;
+    }
+    header > nav {
+        display: block;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+    header > nav {
+        display: block;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+
+
+    /*---------------Main List---------------*/
+    #mainList main > ul > a.hideInstance {
+        display: block;
+    }
+
+    #mainList #filtering {
+        position: absolute;
+        right: 71px;
+        top: 2px;
+    }
+    
+    #mainList #sort {
+        position: absolute;
+        top: 2px;
+        left: 110px;
+    } 
+
+    #mainList h1 {
+        top: 20px;
+        right: 131px;
+    }
+
+    #mainList main > ul li > p , #mainList main > ul li > h2 {
+        right: 20px;
+    }
+
+    #mainList > #wrapper > main > section.filterNav {
+        right: 40px;
+    }
+
+
+
+    /*---------------Main Object---------------*/
+    #main-object main {
+        width: 480px;
+        height: 700px;
+    }
+
+
+    #main-object .address {
+        right: 125px;
+        top: 97px;
+        width: 230px;
+        height: 23px;
+        text-align: center;
+    }
+
+    #main-object .ellipse { 
+        background-image: url("../images/mobile-ellipse.png");
+        height: 153px;
+        width: 176px;
+        top: 170px;
+        left: 152px;
+    }
+
+    .ellipse > p {
+        padding-top: 30px;
+     }
+
+   
+     #main-object .car { 
+        width: 50px;
+        height: 50px;
+         left: 80px;
+         top: 396px;
+         background-image: url("../images/mobile-car.png");
+     }
+
+     #main-object .p {
+         right: 79px;
+         width: 32px;
+         height: 40px;
+         top: 405px;
+         background-image: url("../images/p.png");
+     }
+
+     #main-object .car-info ,#main-object .parking-info {
+        width: 160px;
+        height: 81px;
+        bottom: 171px;
+    }
+
+    #main-object .report {
+        width: 99px;
+        height: 99px;
+        background-image: url("../images/mobile-red-ellipse.png");
+        left: 190px;
+    }
+
+    #main-object .report p {
+        left: 23px;
+        top: 36px;
+        width: 53px;
+        height: 21px;
+        text-align: center;
+    }
+
+    #main-object .car-info p,#main-object .parking-info p {
+        margin-top: 3px;
+    }
+    
+    #main-object .car-info h6,#main-object .parking-info h6 {
+        margin-top: 3px;
+    }
+
+
+    /*---------------Hamburger---------------*/
+    #hamburger section {
+        width: 244px;
+        height: 700px;
+    }
+
+    .search , .home , .work , .bad-park , .settings, .disconect {
+        left: 39px;
+     }
+
+     .search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+        left: 55px;
+    }
+
+     #hamburger .search  {
+        top: 99px;
+    }
+    
+    #hamburger .home {
+        top: 146px;
+    }
+    #hamburger .work {
+        top: 193px;
+    }
+    
+    #hamburger .bad-park  {
+        top: 289px;
+    }
+    
+    #hamburger .settings {
+        top: 336px;
+    }
+    
+    #hamburger .disconect {
+        top: 385px;
+    }
+
+    #ham {
+        left: 36px;
+        top: 25px;
+    }
+    
+/*---------------After Choose(map)---------------*/
+    #shortMap {
+        display: none;
+    }
+
+    #tallMap {
+        display: block;
+    }
+
+    #afterChoose #car {
+        top: 465px;
+        left: 145px;
+    }
+
+    #afterChoose .fa-map-marker-alt {
+        top: 415px;
+        left: 170px;
+    }
+
+    #afterChoose #systemMessege {
+        top: 270px;
+        left: 80px;
+    }
+
+}

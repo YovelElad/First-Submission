@@ -1,0 +1,655 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    /* direction: rtl; */
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+p, label, ul, img {
+    direction: rtl;
+}
+
+header, main, footer, nav, section, div {
+    display: block;
+}
+
+#wrapper {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+body {
+    padding-top: 100px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    position: relative;
+
+
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);    
+
+}
+
+header > nav {
+    position: absolute;
+    bottom: 3px;
+    /* background-color: violet; */
+    display: none;
+    bottom: 7px;
+
+}
+
+header > nav > ul {
+    /* position: absolute; */
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+header > nav > ul  li {
+    width: 250px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+header > nav > ul li.selected {
+    color: black;
+}
+
+header > nav > img {
+    position: absolute;
+    right: 250px;
+    top: 20px;
+}
+
+#logo {
+    background-image: url("../images/Logo.png");
+    display: block;
+    position: absolute;
+    right: 34px;
+    top: 4px;
+    width: 32px;
+    height: 45px;
+}
+
+
+
+.clientPic {
+    position: absolute;
+    display: block;
+    left: 555px;
+    top: 7px;
+    background-image: url("../images/shlomi.png");
+    width: 39px;
+    height: 39px;
+}
+
+/* #hamburger {
+    display: block;
+    position: absolute;
+
+    left: 37px;
+    top:19px ;
+} */
+
+#mainList h1 {
+    direction: rtl;
+    font-size: 15px;
+    position: absolute;
+    right: 193px;
+    top: 10px;
+}
+
+
+
+#mainList .filter {
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+#mainList #filtering {
+    position: absolute;
+    right: 150px;
+    top: 2px;
+}
+
+#mainList #sort {
+    position: absolute;
+    top: 2px;
+    left: 150px;
+} 
+
+#mainList .filter > a > .filterExpand {
+    position: absolute;
+    top: 1px;
+    right: 30px;
+}
+
+#mainList .filter > a > .sortExpand {
+    position: absolute;
+    top: 1px;
+    right: 80px;
+}
+
+#mainList .filter .refresh {
+    position: absolute;
+    left: 10px;
+}
+
+#mainList main {
+    position: relative;
+}
+
+#mainList main > ul {
+    list-style-type: none;
+    z-index: -1;
+}
+
+#mainList main > ul > li {
+    width: 100%;
+    height: 81px;
+    background-color: #f7f6f6;
+    position: relative;
+}
+
+#mainList main > ul li >h2 {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 36px;
+}
+
+#mainList main > ul > a > li{
+    width: 100%;
+    height: 81px;
+    background-color: #f7f6f6;
+    position: relative;
+}
+
+
+#mainList main > ul li > p {
+    position: absolute;
+    top: 38px;
+    right: 36px;
+    font-size: 11px;
+}
+
+#mainList main > ul > a  img {
+    position: absolute;
+    bottom: 0; 
+    }
+
+#mainList main > ul > a.hideInstance {
+    display: none;
+}
+
+#mainList > #wrapper > main > section.filterNav {
+    position: absolute;
+    width: 216px;
+    height: 145px;
+    background-color: white;
+    top: 0;
+    right: 120px;
+    padding-right: 25px;
+    padding-top:5px ;
+}
+
+
+#mainList #filterNav {
+    display: none;
+}  
+
+
+
+#mainList > #wrapper > main > section.filterNav > ul > li {
+    position: relative;
+    height: 24px;
+}
+
+#mainList > #wrapper > main > section.filterNav > ul > li > img {
+    position: absolute;
+    bottom: 3px;
+    left: 30px;
+}
+
+#mainList > #wrapper > main > section.filterNav > ul > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    bottom: 55px;
+    right: 5px;
+}
+
+
+
+
+
+
+
+/* 
+#mainList main > ul li > .saveParkingButton {
+    background-image: url("../images/Ellipse\ 1.png");
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 43px;
+    left: 20px;
+    background-repeat: no-repeat;
+} */
+
+
+
+
+footer {
+
+    width: 100%;
+    height: 58px;
+    position: absolute;
+    /* position: relative; */
+    bottom: 0;
+    /* display: flex; */
+
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+}
+
+footer > #search {
+    position: absolute;
+    top: 5px;
+    left: 48px;
+    font-size: 18px;
+    top: 22px;
+    font-weight: bold;
+}
+
+footer > #search > img {
+    position: absolute;
+    right: 50px;
+}
+
+footer > nav {
+    position: relative;
+    /* background-color: violet; */
+
+}
+
+footer > nav > ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer > nav > ul  li {
+    width: 130px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+footer > nav > ul li.selected {
+    color: black;
+}
+
+footer > img {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*-------After Choose--------*/
+
+#afterChoose footer > #onMyWayTo {
+    position: absolute;
+    right: 107px;
+    top: 9px;
+}
+
+#afterChoose footer > #distance {
+    position: absolute;
+    right: 271px;
+    top: 9px;
+} 
+
+#afterChoose footer > article > p {
+    font-size: 14px;
+}
+
+#afterChoose footer > article > h2 {
+    font-size: 19px;
+
+}
+
+#afterChoose footer > #cancelParking {
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 34px;
+    left: 20px;
+    top: 13px;
+    background-color: #bd362f;
+    border-radius: 13px;
+    text-align: center;
+}
+
+#afterChoose footer > #cancelParking > p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+#afterChoose footer .fa-waze {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 12px;
+    right: 20px;
+}
+
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 288px;
+    width: 700px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 288px;
+    width: 700px;
+}
+
+.mapouter2 {
+    position: relative;
+    text-align: right;
+    height: 550px;
+    width: 480px;
+}
+
+.gmap_canvas2 {
+    overflow: hidden;
+    background: none !important;
+    height: 550px;
+    width: 480px;
+}
+
+
+
+.fa-map-marker-alt {
+    z-index: 1;
+    position: absolute;
+    color: #0c59cf;
+    top: 250px;
+    left: 300px;
+}
+
+.fa-location-arrow {
+    color: #ee5f5b;
+    position: absolute;
+    top: 290px;
+    left: 270px;
+    z-index: 1;
+
+}
+
+#tallMap {
+    display: none;
+    position: absolute;
+    /* visibility: hidden; */
+}
+
+
+
+
+
+/*-------messege--------*/
+
+#afterChoose #systemMessege {
+    position: absolute;
+    width: 335px;
+    height: 207px;
+    /* width: 0; */
+    /* width: 0;
+    height: 0; */
+
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    left: 185px;
+    top: 105px;
+    z-index: 10;
+    border-radius: 7px;
+    display: none;
+}
+
+#afterChoose #systemMessege > h2 {
+    position: absolute;
+    font-size: 17px;
+    display: block;
+    width: 335px;
+    text-align: center;
+    top: 30px;
+}
+
+#afterChoose #systemMessege form{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+#afterChoose #systemMessege form > input {
+    position: absolute;
+    display: block;
+    width: 200px;
+    right: 0;
+}
+
+#afterChoose #systemMessege form > label {
+    position: absolute;
+    display: block;
+    width: 150px;
+    right: 110px;
+    
+}
+
+#afterChoose #systemMessege form > .lable2 {
+    top:25px;
+}
+
+#afterChoose #systemMessege form > .lable3 {
+    top:50px;
+}
+
+#afterChoose #systemMessege > a {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+#afterChoose #systemMessege > #sendButton {
+    background-color: #46a546;
+    top: 145px;
+    left: 59px;
+}
+
+#afterChoose #systemMessege > #dontSendButton {
+    background-color: #bd362f;
+    top: 145px;
+    right: 59px;
+    z-index: 11;
+}
+
+#afterChoose #systemMessege > h3 {
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+#afterChoose #systemMessege > #send {
+    top: 150px;
+    left: 99px;
+    z-index: 12;
+}
+
+#afterChoose #systemMessege > #dontSend{
+    top: 150px;
+    right:90px;
+    z-index: 12;
+} 
+
+#afterChoose #systemMessege > p {
+    position: absolute;
+    display: block;
+    width: 335px;
+    text-align: center;
+    font-size: 8px;
+    bottom: 15px;
+}
+
+#afterChoose .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-color: #bd362f;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    bottom: 80px;
+    right: 60px;;
+}
+#afterChoose .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 800px) {
+     #wrapper {
+        width: 480px;
+        height: 700px;
+    }
+
+    #mainList main > ul > a.hideInstance {
+        display: block;
+    }
+
+    #mainList #filtering {
+        position: absolute;
+        right: 71px;
+        top: 2px;
+    }
+    
+    #mainList #sort {
+        position: absolute;
+        top: 2px;
+        left: 110px;
+    } 
+
+    header {
+        height: 95px;
+    }
+
+    #logo {
+        top: 15px;
+        right: 14px ;
+    }
+
+    #hamburger {
+        left: 30px;
+        top: 22px;
+    }
+
+    .clientPic {
+        top: 16px;
+        left: 375px;
+    }
+
+    #mainList h1 {
+        top: 20px;
+        right: 131px;
+    }
+
+    header > nav {
+        display: block;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+    #mainList main > ul li > p , #mainList main > ul li > h2 {
+        right: 20px;
+    }
+
+    #mainList > #wrapper > main > section.filterNav {
+        right: 40px;
+    }
+
+    #shortMap {
+        display: none;
+    }
+
+    #tallMap {
+        display: block;
+    }
+
+    #afterChoose #car {
+        top: 465px;
+        left: 145px;
+    }
+
+    #afterChoose .fa-map-marker-alt {
+        top: 415px;
+        left: 170px;
+    }
+}

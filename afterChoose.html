@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/newStyle.css">   
+
+    <title>After Choose</title>
+    <meta charset="UTF-8">
+    <script src="js/script.js"> </script>
+    <script src="https://kit.fontawesome.com/668019aaea.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="afterChoose">
+    <p id="p"></p>
+
+    <div id="wrapper">
+        <div class="willFade">
+            <header>
+                <div id="hamburger">
+                    <input id="ham" type="image" src="images/ham-icon.png">
+                    <section id="links">
+                        <ul>
+                            <li class="search"><img src="images/search-icon.png"><a href="#">חיפוש</a></li>
+                            <li class="home"><img src="images/home-icon.png"><a href="#">בית</a></li>
+                            <li class="work"><img src="images/work-icon.png"> <a href="#">עבודה</a></li>
+                            <li class="bad-park"><img src="images/outlined-flag-icon.png"><a href="#">דווח על חניה</a></li>
+                            <li class="settings"><img src="images/settings-icon.png"> <a href="#">הגדרות</a></li>
+                            <li class="disconect"><img src="images/highlight-off-icon.png"><a href="#">התנתק</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <a id="logo" href="index.html">
+                </a>
+
+                <a class="clientPic" href="#">
+                </a>
+
+                <h1><b>בוקר טוב, <br> שלומי בן שבת</b></h1>
+
+                <nav>
+                    <ul>
+                        <a href="#">
+                            <li class="selected">רשימה</li>
+                        </a>
+                        <a href="#">
+                            <li>מפה</li>
+                        </a>
+                    </ul>
+                    <img src="images/Line 1.png">
+                </nav>
+            </header>
+
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <i id="car" class="fas fa-location-arrow"></i>
+
+
+            <section id="shortMap">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="700" height="288" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=tel%20aviv&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://123movies-to.org"></a><br>
+                        <a href="https://www.embedgooglemap.net">free goggle map</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="tallMap">
+                <div class="mapouter2">
+                    <div class="gmap_canvas2"><iframe width="480" height="550" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=tel%20aviv&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://123movies-to.org"></a><br>
+                        <a href="https://www.embedgooglemap.net">how to embed a google map</a>
+
+                    </div>
+                </div>
+            </section>
+            <a href="#" class="report">
+                <p>דווח</p>
+            </a>
+        </div>
+
+        <section id="systemMessege">
+            <h2>נשמח לדעת האם תצא בקרוב?</h2>
+            <form>
+                <label class="lable1">בחצי שעה הקרובה</label> <input class="lable1" type="radio" name="outSoon"
+                    value="30min">
+                <label class="lable2">בשעה הקרובה</label><input class="lable2" type="radio" name="outSoon"
+                    value="60min">
+                <label class="lable3">בשעתיים הקרובות</label><input class="lable3" type="radio" name="outSoon"
+                    value="120min">
+            </form>
+
+            <a id="sendButton" href="index.html"></a>
+            <a id="dontSendButton" href="index.html"></a>
+
+            <h3 id="send">שלח</h3>
+            <h3 id="dontSend">לא ידוע</h3>
+            <p>* אם תצא בזמן שהקצבת, בפעם הבאה תוכל לשמור חנייה ל20 דקות!</p>
+
+        </section>
+        <div class="willFade">
+
+
+            <footer>
+
+                <article id="onMyWayTo">
+                    <p>בדרך אל:</p>
+                    <h2>מזא"ה 3</h2>
+                </article>
+
+                <article id="distance">
+                    <p>מרחק:</p>
+                    <h2>0.4 ק"מ</h2>
+                </article>
+
+                <a href="index.html" id="cancelParking">
+                    <p>בטל חנייה</p>
+                </a>
+                <a href="#"><i class="fab fa-waze fa-2x" size:5x></i></a>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/hamburger-script.js"></script>
+
+    <script>
+        drive();
+    </script>
+</body>
+
+</html>

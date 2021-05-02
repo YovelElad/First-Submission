@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger-style.css"> -->
+    <link rel="stylesheet" href="css/newStyle.css">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <title>Main List</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Slider - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+
+<body id="mainList">
+    <p id="p"></p>
+    <div id="wrapper">
+
+        <header>
+            <!-- <a id="hamburger" href="#"><i class="fas fa-bars fa-lg"></i></a> -->
+
+            <div id="hamburger">
+                <input id="ham" type="image" src="images/ham-icon.png">
+                <section id="links">
+                    <ul>
+                        <li class="search"><img src="images/search-icon.png"><a href="#">חיפוש</a></li>
+                        <li class="home"><img src="images/home-icon.png"><a href="#">בית</a></li>
+                        <li class="work"><img src="images/work-icon.png"> <a href="#">עבודה</a></li>
+                        <li class="bad-park"><img src="images/outlined-flag-icon.png"><a href="#">דווח על חניה</a></li>
+                        <li class="settings"><img src="images/settings-icon.png"> <a href="#">הגדרות</a></li>
+                        <li class="disconect"><img src="images/highlight-off-icon.png"><a href="#">התנתק</a></li>
+                    </ul>
+                </section>
+            </div>
+            
+            <a id="logo" href="#">
+                <!-- <img src="images/logo.png"> -->
+            </a>
+
+            <a class="clientPic" href="#">
+                <!-- <img id="profile" src="images/551d6e6724d9494d1.jpg"> -->
+            </a>
+
+            <h1><b>בוקר טוב, <br> שלומי בן שבת</b></h1>
+
+            <nav>
+                <ul>
+                 <a href="#"><li class="selected">רשימה</li></a>
+                 <a href="#"><li >מפה</li></a>
+                </ul>
+                <img src="images/Line 1.png">
+            </nav>
+        </header>
+
+
+        <section class="filter">
+            <a id="filtering" href="#">סינון
+                <img class="filterExpand" src="images/expand_more.png">
+            </a>
+
+            <a id="sort" href="#">חניות פנויות
+                <img class="sortExpand" src="images/expand_more.png">
+            </a>
+
+            <img class="refresh" src="images/10sec.png">
+        </section>
+
+
+
+        <main>
+            
+            <ul >
+                <a id="removeParking" href="main-object.html">
+                    <li class="ListLi">
+                        <h2>מזא"ה 3, תל אביב</h2>
+                        <p>מרחק: 0.4 ק"מ <br>זמן הגעה משוער: 3 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="ListLi">
+                        <h2>טשרניחובסקי 89, תל אביב</h2>
+                        <p>מרחק: 1.1 ק"מ <br>זמן הגעה משוער: 2 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="ListLi">
+                        <h2>פיארברג 12, תל אביב</h2>
+                        <p>מרחק: 1.4 ק"מ <br>זמן הגעה משוער: 4 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="ListLi">
+                        <h2>טשרניחובסקי 40, תל אביב</h2>
+                        <p>מרחק: 1.4 ק"מ <br>זמן הגעה משוער: 6 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+
+                <a href="#" class="hideInstance">
+                    <li class="ListLi">
+                        <h2>רוטשילד 45, תל אביב</h2>
+                        <p>מרחק: 2.4 ק"מ <br>זמן הגעה משוער: 12 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+                <a href="#" class="hideInstance willDelete">
+                    <li class="ListLi">
+                        <h2>בני ציון 29, תל אביב</h2>
+                        <p>מרחק: 3 ק"מ <br>זמן הגעה משוער: 16 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+                <a href="#" class="hideInstance willDelete">
+                    <li class="ListLi">
+                        <h2>בני ציון 29, תל אביב</h2>
+                        <p>מרחק: 0.4 ק"מ <br>זמן הגעה משוער: 3 דק'</p>
+                        <img src="images/Line 2.png">
+
+                    </li>
+                </a>
+            </ul>
+            <section id="filterNav" class="filterNav">   
+                <ul>
+                    <li>
+                        <a href="#">הכל</a>
+                        <img src="images/Line 2 small.png">
+                    </li>
+                    <li>
+                        <a class="willChoose" href="#">מתחת ל-15 דק' נסיעה</a>
+                        <img src="images/Line 2 small.png">
+                    </li>
+                    <li>
+                        <a href="#">לתושבי תל אביב</a>
+                        <img src="images/Line 2 small.png">
+                    </li>
+                    <li class="selected">
+                        <a href="#">מעל הגודל:</a>
+                        
+                    </li>
+                    <img id="check" src="images/check-mark-black-outline (1).png">
+                    <!-- <input  type="range" name="renge" min="3" max="7"><br><br> -->
+                    <div id="slider"></div>
+
+                </ul>
+            </section>
+
+            <section id="sortNav" class="sortNav">
+                <ul>
+                    <li>
+                        <a href="#">חניות פנויות</a>
+                        <img src="images/Line 2 small.png">
+                    </li>
+                    <li>
+                        <a class="willChoose" href="#">מתפנות בקרוב</a>
+                        <img src="images/Line 2 small.png">
+                    </li>
+                    <img id="check" src="images/check-mark-black-outline (1).png">
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <a id="search" href="#">חיפוש
+                <img src="images/search.png">
+            </a>
+
+           <nav>
+               <ul>
+                <a href="#"><li class="selected">רשימה</li></a>
+                <a href="#"><li>מפה</li></a>
+               </ul>
+           </nav>
+           <img src="images/Line 1.png">
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/hamburger-script.js"></script>
+
+    <script>listColor();</script>
+    <script>
+        $( function() {
+          $( "#slider" ).slider();
+        } );
+        </script>
+</body>
+
+</html>
